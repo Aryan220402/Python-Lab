@@ -1,9 +1,7 @@
 n=int(input('Enter the Year'))
-if n%4==0 :
-	print('Leap year')
-elif n%100==0:
-	print('Leap year')
-elif n%400==0:
-	print('Leap year')
+if n%4==0 and n%400==0:
+    print('Leap Year')
+elif n%4==0 and n%100!=0:
+    print('Leap Year')
 else :
-	print('Not Leap year')
+    print('Not Leap Year')
